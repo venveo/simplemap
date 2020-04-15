@@ -110,11 +110,11 @@ class MapService extends Component
 			if ($map->id)
 				$record->id = $map->id;
 
-			$record->ownerId     = $map->ownerId;
 			$record->ownerSiteId = $map->ownerSiteId;
 			$record->fieldId     = $map->fieldId;
 		}
 
+		$record->ownerId = $map->ownerId;
 		$record->lat = $map->lat;
 		$record->lng = $map->lng;
 
